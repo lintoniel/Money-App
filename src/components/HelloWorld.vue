@@ -40,7 +40,11 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
+<<<<<<< HEAD
 <style scoped lang="scss">
+=======
+<style scoped>
+>>>>>>> 654b1720762c46df1e108a5722782489251d841d
 h3 {
   margin: 40px 0 0;
 }
