@@ -1,9 +1,5 @@
 # money-app
-
-<<<<<<< HEAD
-=======
 It is family App, whose purpose is to apgrade Front-end skills. Authors: Artem Fayzulin(https://github.com/afayzulin, team-lead) and Lena Dyba
->>>>>>> 654b1720762c46df1e108a5722782489251d841d
 ## Project setup
 ```
 npm install
