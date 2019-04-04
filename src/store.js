@@ -5,7 +5,7 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    allMoney: 0,
+    all_money: 0,
     show_add_incom_page: false,
     show_add_expense_page: false, 
   },
