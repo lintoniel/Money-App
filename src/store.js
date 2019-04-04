@@ -6,7 +6,8 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
     allMoney: 0,
-    showAddMoneyPage: false, 
+    showAddMoneyPage: false,
+    newTestProperty: 0, 
   },
   mutations: {
     changeVisiblityAddMoneyPage(state, value) {

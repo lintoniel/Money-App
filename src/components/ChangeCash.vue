@@ -16,7 +16,6 @@ export default {
             this.$store.commit('changeVisiblityAddMoneyPage', true);
             history.pushState('{ page : addMoney}', 'addMoney', '#addMoney');
         }
-        
     }
 
 }
