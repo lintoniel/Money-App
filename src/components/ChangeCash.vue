@@ -1,7 +1,7 @@
 <template>
     <div>
-        <button @click="showAddMoneyPage">+</button>
-        <button>-</button>
+        <button @click="showAddIncomePage">+</button>
+        <button @click="showAddExpensePage">-</button>
     </div>
 </template>
 
@@ -10,11 +10,18 @@ export default {
     name: 'ChangeCash',
     methods: {
         /**
-         * Показываем страницу для добавления денег
+         * Показываем страницу для добавления доходов
          */
-        showAddMoneyPage() {
-            this.$store.commit('changeVisiblityAddMoneyPage', true);
-            history.pushState('{ page : addMoney}', 'addMoney', '#addMoney');
+        showAddIncomePage() {
+            this.$store.commit('changeVisiblityAddIncomPage', true);
+            history.pushState('{ page : addIncome}', 'addIncome', '#addIncome');
+        },
+        /**
+         * Показывает страницу для записи расходов
+         */
+        showAddExpensePage() {
+            this.$store.commit('changeVisiblityAddExpensePage', true);
+            history.pushState('{ page : addExpense}', 'addExpense', '#addExpense');
         }
     }
 
