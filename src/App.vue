@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div> {{all_money}} </div>
+    <div> {{all_money}} расход {{all_expense}} </div>
     <ChangeCash></ChangeCash>
     <AddIncome v-show="this.state.show_add_incom_page"></AddIncome>
     <AddExpense v-show="this.state.show_add_expense_page"></AddExpense>
@@ -22,7 +22,8 @@ export default {
   },
   computed: {
     state() { return this.$store.state; },
-    all_money() { return this.state.all_money }
+    all_money() { return this.state.all_money },
+    all_expense() { return this.state.expenseStore.all_expense}
   }
 }
 </script>

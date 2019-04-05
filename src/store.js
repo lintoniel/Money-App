@@ -1,5 +1,7 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import {expenseStore} from './modules/expenseStore.js'
+import {incomeStore} from './modules/incomeStore.js'
 
 Vue.use(Vuex)
 
@@ -19,5 +21,10 @@ export default new Vuex.Store({
   },
   actions: {
 
+  },
+
+  modules: {
+    expenseStore,
+    incomeStore
   }
 })
