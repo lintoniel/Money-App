@@ -1,9 +1,19 @@
 <template>
-    <div>Добавить доход</div>
+    <div>
+        <div>
+            Добавить доход
+        </div>
+        <ChooseCategory></ChooseCategory>
+    </div>
 </template>
 
 <script>
+import ChooseCategory from './ChooseCategory.vue'
+
 export default {
-    name: 'AddIncome'
+    name: 'AddIncome',
+    components: {
+         ChooseCategory
+    }
 }
 </script>

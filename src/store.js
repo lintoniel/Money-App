@@ -10,6 +10,7 @@ export default new Vuex.Store({
     all_money: 0,
     show_add_incom_page: false,
     show_add_expense_page: false, 
+    add_category_visible: false
   },
   mutations: {
     changeVisiblityAddIncomPage(state, value) {
@@ -17,6 +18,9 @@ export default new Vuex.Store({
     },
     changeVisiblityAddExpensePage(state, value) {
       this.state.show_add_expense_page = value;
+    },
+    changeVisiblityAddCategory(state, value) {
+      this.state.add_category_visible = value;
     }
   },
   actions: {

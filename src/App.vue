@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div> {{all_money}} расход {{all_expense}} </div>
+    <div> {{all_money}} расход</div>
     <ChangeCash></ChangeCash>
     <AddIncome v-show="this.state.show_add_incom_page"></AddIncome>
     <AddExpense v-show="this.state.show_add_expense_page"></AddExpense>
